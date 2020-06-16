@@ -50,6 +50,48 @@ public class DTUIMessages extends NLS {
 	public static String database_consumer_wizard_trunicate_checkbox_title;
 	public static String database_consumer_wizard_trunicate_checkbox_question;
 	
+	public static String columns_mapping_dialog_shell_text;
+	public static String columns_mapping_dialog_composite_label_text_source_container;
+	public static String columns_mapping_dialog_composite_label_text_source_entity;
+	public static String columns_mapping_dialog_composite_label_text_target_container;
+	public static String columns_mapping_dialog_composite_label_text_target_entity;
+	public static String columns_mapping_dialog_column_source_text;
+	public static String columns_mapping_dialog_column_source_type_text;
+	public static String columns_mapping_dialog_column_target_text;
+	public static String columns_mapping_dialog_column_target_type_text;
+	public static String columns_mapping_dialog_cell_text_existing;
+	public static String columns_mapping_dialog_cell_text_new;
+	public static String columns_mapping_dialog_cell_text_skip;
+	public static String columns_mapping_dialog_column_type_text_mapping;
+
+	public static String database_consumer_page_mapping_name_and_title;
+	public static String database_consumer_page_mapping_description;
+	public static String database_consumer_page_mapping_column_source_text;
+	public static String database_consumer_page_mapping_column_target_text;
+	public static String database_consumer_page_mapping_column_mapping_text;
+	public static String database_consumer_page_mapping_node_title;
+	public static String database_consumer_page_mapping_table_name;
+	public static String database_consumer_page_mapping_monitor_task;
+	public static String database_consumer_page_mapping_
+	public static String database_consumer_page_mapping_
+	public static String database_consumer_page_mapping_
+	public static String database_consumer_page_mapping_
+	public static String database_consumer_page_mapping_
+	
+	
+	public static String database_producer_page_extract_settings_name_and_title;
+	public static String database_producer_page_extract_settings_description;
+	public static String database_producer_page_extract_settings_threads_num_text_tooltip;
+	public static String database_producer_page_extract_settings_new_connection_checkbox_tooltip;
+	public static String database_producer_page_extract_settings_row_count_checkbox_tooltip;
+	public static String database_producer_page_extract_settings_text_fetch_size_label;
+	public static String database_producer_page_extract_settings_text_fetch_size_tooltip;
+	
+	
+	
+	
+	
+	
 	static {
 		// initialize resource bundle
 		NLS.initializeMessages(BUNDLE_NAME, DTUIMessages.class);

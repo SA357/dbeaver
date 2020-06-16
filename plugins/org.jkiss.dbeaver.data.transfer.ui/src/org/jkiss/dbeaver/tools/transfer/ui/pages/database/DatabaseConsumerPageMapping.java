@@ -47,6 +47,7 @@ import org.jkiss.dbeaver.runtime.ui.UIServiceSQL;
 import org.jkiss.dbeaver.tools.transfer.DataTransferPipe;
 import org.jkiss.dbeaver.tools.transfer.database.*;
 import org.jkiss.dbeaver.tools.transfer.internal.DTMessages;
+import org.jkiss.dbeaver.tools.transfer.ui.internal.DTUIMessages;
 import org.jkiss.dbeaver.tools.transfer.ui.wizard.DataTransferWizard;
 import org.jkiss.dbeaver.ui.DBeaverIcons;
 import org.jkiss.dbeaver.ui.SharedTextColors;
@@ -80,9 +81,9 @@ public class DatabaseConsumerPageMapping extends ActiveWizardPage<DataTransferWi
     }
 
     public DatabaseConsumerPageMapping() {
-        super("Tables mapping");
-        setTitle("Tables mapping");
-        setDescription("Map tables and columns transfer");
+        super(DTUIMessages.database_consumer_page_mapping_name_and_title);
+        setTitle(DTUIMessages.database_consumer_page_mapping_name_and_title);
+        setDescription(DTUIMessages.database_consumer_page_mapping_description);
     }
 
     private DatabaseConsumerSettings getDatabaseConsumerSettings() {
@@ -335,7 +336,7 @@ public class DatabaseConsumerPageMapping extends ActiveWizardPage<DataTransferWi
                 super.update(cell);
             }
         });
-        columnSource.getColumn().setText("Source");
+        columnSource.getColumn().setText(DTUIMessages.database_consumer_page_mapping_column_source_text);
 
         TreeViewerColumn columnTarget = new TreeViewerColumn(mappingViewer, SWT.LEFT);
         columnTarget.setLabelProvider(new MappingLabelProvider() {
@@ -352,7 +353,7 @@ public class DatabaseConsumerPageMapping extends ActiveWizardPage<DataTransferWi
                 super.update(cell);
             }
         });
-        columnTarget.getColumn().setText("Target");
+        columnTarget.getColumn().setText(DTUIMessages.database_consumer_page_mapping_column_target_text);
         columnTarget.setEditingSupport(new EditingSupport(mappingViewer) {
             @Override
             protected CellEditor getCellEditor(Object element)
@@ -426,7 +427,7 @@ public class DatabaseConsumerPageMapping extends ActiveWizardPage<DataTransferWi
                 super.update(cell);
             }
         });
-        columnMapping.getColumn().setText("Mapping");
+        columnMapping.getColumn().setText(DTUIMessages.database_consumer_page_mapping_column_mapping_text);
         columnMapping.setEditingSupport(new EditingSupport(mappingViewer) {
             @Override
             protected CellEditor getCellEditor(Object element) {
@@ -625,7 +626,7 @@ public class DatabaseConsumerPageMapping extends ActiveWizardPage<DataTransferWi
             }
             DBNNode node = DBWorkbench.getPlatformUI().selectObject(
                 getShell(),
-                "Choose target table",
+                DTUIMessages.database_consumer_page_mapping_node_title,
                 rootNode,
                 selectedNode,
                 new Class[] {DBSObjectContainer.class, DBSDataManipulator.class},
@@ -655,7 +656,7 @@ public class DatabaseConsumerPageMapping extends ActiveWizardPage<DataTransferWi
     {
         String tableName = EnterNameDialog.chooseName(
             getShell(),
-            "New table name",
+            DTUIMessages.database_consumer_page_mapping_table_name,
             transformTargetName(mapping.getMappingType() == DatabaseMappingType.create ? mapping.getTargetName() : ""));
         if (!CommonUtils.isEmpty(tableName)) {
             try {
