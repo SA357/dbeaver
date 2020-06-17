@@ -72,11 +72,11 @@ public class DTUIMessages extends NLS {
 	public static String database_consumer_page_mapping_node_title;
 	public static String database_consumer_page_mapping_table_name;
 	public static String database_consumer_page_mapping_monitor_task;
-	public static String database_consumer_page_mapping_
-	public static String database_consumer_page_mapping_
-	public static String database_consumer_page_mapping_
-	public static String database_consumer_page_mapping_
-	public static String database_consumer_page_mapping_
+	//public static String database_consumer_page_mapping_
+	//public static String database_consumer_page_mapping_
+	//public static String database_consumer_page_mapping_
+	//public static String database_consumer_page_mapping_
+	//public static String database_consumer_page_mapping_
 	
 	
 	public static String database_producer_page_extract_settings_name_and_title;
